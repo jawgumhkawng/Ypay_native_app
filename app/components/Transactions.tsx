@@ -5,8 +5,10 @@ import {
   StyleSheet,
  } from "react-native";
  import { MaterialIcons } from "@expo/vector-icons";
- import { useState } from "react";
- export default function Transactions() {
+import { useState } from "react";
+ 
+export default function Transactions() {
+   
   const [transactions, setTransactions] = useState([
     { id: 1, msg: "EPC Bill", type: "out", time: "Jul 6, 2024" },
     { id: 2, msg: "Deposit", type: "in", time: "Jul 5, 2024" },
@@ -14,6 +16,9 @@ import {
     { id: 4, msg: "Wifi Bill", type: "out", time: "Jul 4, 2024" },
     { id: 5, msg: "Payment", type: "in", time: "Jul 4, 2024" },
     { id: 6, msg: "Transfer", type: "out", time: "Jul 7, 2024" },
+    { id: 7, msg: "Transfer", type: "out", time: "Jul 7, 2024" },
+    { id: 8, msg: "Transfer", type: "out", time: "Jul 7, 2024" },
+    { id: 9, msg: "Transfer", type: "out", time: "Jul 7, 2024" },
   ]);
   return (
     <ScrollView>
